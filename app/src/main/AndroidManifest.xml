@@ -18,4 +18,7 @@
         </activity>
     </application>
 
+    <!--加入联网权限-->
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
 </manifest>
