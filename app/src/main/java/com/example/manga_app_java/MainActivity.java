@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         webview.getSettings().setLoadWithOverviewMode(true);//和setUseWideViewPort(true)一起解决网页自适应问题
 
         //加载地址
-        webview.loadUrl("https://manga.tt2.ink");
+        webview.loadUrl("http://manga.tt2.ink");
 
         //加载webView自己的环境 去加载页面
         webview.setWebViewClient(new WebViewClient() {

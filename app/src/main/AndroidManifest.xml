@@ -7,10 +7,9 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
-        <!--去除标题栏-->
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <!--android:theme="@style/Theme.Mangaappjava">-->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
