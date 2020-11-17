@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        WebView webview = (WebView)findViewById(R.id.webview);
+        WebView webview = (WebView) findViewById(R.id.webview);
 
         //是否允许执行js，默认为false。设置true时，会提醒可能造成XSS漏洞
         webview.getSettings().setJavaScriptEnabled(true);
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         webview.getSettings().setLoadWithOverviewMode(true);//和setUseWideViewPort(true)一起解决网页自适应问题
 
         //加载地址
-        webview.loadUrl("http://manga.tt2.ink");
+        webview.loadUrl(this.getString(R.string.serve_test));
 
         //加载webView自己的环境 去加载页面
         webview.setWebViewClient(new WebViewClient() {
